@@ -75,21 +75,25 @@ Table: Technical Support Dataset
 
 
 #### Key Measures
-1. Attrition Count:
-   - Measures the No. of employees who left the organization.
-   - Formula: Attrition Count = CALCULATE(COUNTROWS('HR-Employee-Attrition'), 'HR-Employee-Attrition'[Attrition] = "Yes")
-2. Total No.of Employees:
-   - Measures the Total No. of Employees in the Company
-   - Formula: Total No.of Employees = COUNT('HR-Employee-Attrition'[EmployeeNumber]) 
-3. Attrition Rate:
-   - Measures the percentage of employees who left the organization.
-   - Formula: Attrition rate % = DIVIDE([Attrition Count],[Total No.of Employees],0)*100
-4. Average Monthly Salary:
-   - Gives the average monthly income of employees.
-   - Formula: AVERAGE_Monthly_SALARY = CALCULATE(AVERAGE('HR-Employee-Attrition'[MonthlyIncome]))
+1. Daily Ticket Volume:
+   - Measures the Daily Volume of Tickets
+   - Formula: Daily Ticket Volume = COUNTROWS('Data')
+2. Monthly Ticket Volume:
+   - Measures the Monthly Ticket Volume
+   - Formula: Monthly Ticket Volume = CALCULATE([Daily Ticket Volume], VALUES('Calender'[Start of Month])) 
+3. Weekly Ticket Volume:
+   - Measures the Weekly Ticket Volume
+   - Formula: Weekly Ticket Volume = CALCULATE([Daily Ticket Volume], VALUES('Calender'[Week]))
+4. Resolved Tickets:
+   - Gives the Resolved Tickets which adheres "Within SLA" of both SLA for First Response & SLA for Resolution.
+   - Formula: Resolved Tickets = CALCULATE
+                                 (COUNT(Data[Ticket ID]),
+                                 Data[SLA For Resolution] = "Within SLA", 
+                                 Data[SLA For first response] = "Within SLA", 
+                                 Data[Status] = "Closed"|| Data[Status] = "Resolved")
 5. Average Tenure at the Current Role:
-   - Calculates the average number of years departing employees spent at the company.
-   - Formula: Average_Tenure_at_currentRole = CALCULATE(AVERAGE('HR-Employee-Attrition'[YearsInCurrentRole]))
+   - Calculates the In Progress Tickets
+   - Formula: In Progress Tickets = CALCULATE(COUNT(Data[Ticket ID]), Data[Status] = "In progress")
 6. Average Age of the Employees:
    - Provides the average age of employees who have left the organization
    - Formula: AVG_Age = CALCULATE(VALUE(AVERAGE(('HR-Employee-Attrition'[Age]))))
