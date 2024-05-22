@@ -91,18 +91,28 @@ Table: Technical Support Dataset
                                  Data[SLA For Resolution] = "Within SLA", 
                                  Data[SLA For first response] = "Within SLA", 
                                  Data[Status] = "Closed"|| Data[Status] = "Resolved")
-5. Average Tenure at the Current Role:
+     
+5. In Progress Tickets:
    - Calculates the In Progress Tickets
    - Formula: In Progress Tickets = CALCULATE(COUNT(Data[Ticket ID]), Data[Status] = "In progress")
-6. Average Age of the Employees:
-   - Provides the average age of employees who have left the organization
-   - Formula: AVG_Age = CALCULATE(VALUE(AVERAGE(('HR-Employee-Attrition'[Age]))))
-7. Average Distance From Home:
-   - Indicates the average distance from home for employees.
-   - Formula: AVG_Distance_from_Home = CALCULATE(AVERAGE('HR-Employee-Attrition'[DistanceFromHome]))
-8. Average Percentage Hike:
-   - Provides the average percentage hike given to the Employees.
-   - Formula: Avg_Perc_Hike = CALCULATE(AVERAGE('HR-Employee-Attrition'[PercentSalaryHike]))
+6. Peak Ticket Creation Hour:
+   - Provides the Maximum Number of Tickets created during Peak Hours.
+   - Formula: Peak_Ticket_Creation_Hour = 
+               VAR HourlyTicketCount = SUMMARIZE('Data','Data'[Createdtime_Hour],"Ticket ID", COUNTROWS('Data'))
+               VAR MaxTickets = MAXX(HourlyTicketCount,[Daily Ticket Volume])
+               RETURN
+               CALCULATE(MAX('Data'[Createdtime_Hour]),FILTER(HourlyTicketCount,[Daily Ticket Volume] = MaxTickets))
+7. Work Hours Ticket Volume:
+   - Indicates the ticket volume created during Work Hours.
+   - Formula: Work Hours Ticket Volume = CALCULATE([Daily Ticket Volume], FILTER('Data',
+                                                                          HOUR('Data'[Created time]) >= 9 &&
+                                                                          HOUR('Data'[Created time]) < 17))
+8. After Hours Tickets:
+   - Provides the ticket volume created during  After Work Hours
+   - Formula: After Hours Tickets = CALCULATE([Daily Ticket Volume],FILTER('Data',
+                                                                    HOUR('Data'[Created time]) < 9 ||
+                                                                    HOUR('Data'[Created time]) >= 17))
+
 9. Average Monthly Rate:
     - Measures the Average rate fixed by the company.
     - Formula: AVG_Rate = CALCULATE(AVERAGE('HR-Employee-Attrition'[MonthlyRate]))
