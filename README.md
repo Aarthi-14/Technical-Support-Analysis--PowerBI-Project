@@ -127,16 +127,15 @@ This section gives a detailed view of the CSAT Trend for Topic, Agent & Agent SL
  * Heather Urry attended maximum(76%) of tickets within SLA for Resolution and Minimum of 42 Tickets, under "SLA Violated for Resolution" out of his total 177 tickets.
 
 ### Key Insights
+
 1. Resolution and SLA Adherence:
-Out of 2330 total tickets, 1355 were resolved within the SLA for both first response and resolution times.
-400 tickets are still in progress, highlighting a need for improved resolution processes.
+Out of 2330 total tickets, 1355 were resolved within the SLA for both first response and resolution times.400 tickets are still in progress, highlighting a need for improved resolution processes.
 
 2.Ticket Volume Trends:
 The peak ticket creation hour is at the 15th hour, with the majority of tickets (1566) being raised during after-hours, compared to 764 during work hours.
 
 3.Topic and Product Analysis:
-Under the Product Setup topic, 374 out of 630 tickets were resolved within SLA, but significant SLA violations were noted: 311 for first response and 783 for resolution.
-The Ready to Use Software category saw the highest number of tickets (1010), with 610 resolved within SLA.
+Under the Product Setup topic, 374 out of 630 tickets were resolved within SLA, but significant SLA violations were noted: 311 for first response and 783 for resolution.The Ready to Use Software category saw the highest number of tickets (1010), with 610 resolved within SLA.
 
 4.Source Analysis:
 Email was the predominant source of tickets (1234), with 780 resolved within SLA and 844 raised after hours.
