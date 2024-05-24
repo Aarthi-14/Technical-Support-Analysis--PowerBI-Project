@@ -95,8 +95,9 @@ This section gives a detailed view of the Ticket trends over Topic, Source, Prod
 #### Geography Trend of SLA for First Response
   ![Geography Trends](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/885b9c78-24c8-437d-9401-26255b70eb57)
 
-* Germany has the Hightest ticket volume of 306 in which 259 tickets are "within SLA" for First Response & 47 tickets are SLA violated.
-* 
+* Germany has the Hightest ticket volume of 306 in which 259 tickets are "within SLA" & 47 tickets are SLA violated for First Response & 196 tickets are "within SLA" & 110 tickets are SLA violated for Resolution.
+* Bulgaria has the lowest ticket ticket volume of 131 in 113 tickets are "Within SLA" & 18 tickets are SLA violated for first Response & 97 tickets are "within SLA" & 34 tickets are SLA violated for Resolution.
+  
 ### CSAT & Agent SLA Trends
 This section gives a detailed view of the CSAT Trend for Topic, Agent & Agent SLA for First Response & Resolution.
 
