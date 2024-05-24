@@ -33,7 +33,8 @@ Visualizations play a crucial role in translating raw data into actionable insig
 ### Ticket Volume 
 This section gives a summary of the Ticket volumes, the daily, monthly & weekly ticket Volume & the Peak Ticket Creation hour trend.
 
-  ![Section1](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/86144f09-adae-4e28-af8d-1fd6e9a11355)
+  ![TC SUMMARY](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/66d21c3d-64f7-489c-b81e-b940bccc6272)
+
 
 ### Ticket Summary
 This visualization presents a comprehensive view of Overall Ticket Summary. 
@@ -50,8 +51,18 @@ This visualization presents a comprehensive view of Overall Ticket Summary.
 #### Daily Ticket Volume
 
 ![Daily tc](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/73603ae9-ff2b-4e4c-9869-dbb50178d5ad)
-![weekly tc](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/4c439b98-8c31-4562-9b8e-929d8e16c073)
-![Monthly tc](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/946ceac7-1c24-4f6a-9436-f66b907dc666)
+
+  * Daily volume trends shows maximum number of Tickets(439) was created on Wednesdays. During Saturdays & Sundays, the tickets were less than 200 in total.
+
+#### Weekly Ticket Volume
+  ![weekly tc](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/4c439b98-8c31-4562-9b8e-929d8e16c073)
+
+  * Weekly volume trends shows maximum number of Tickets(63) was created on Week Number 4.
+
+#### Weekly Ticket Volume 
+  ![Monthly tc](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/946ceac7-1c24-4f6a-9436-f66b907dc666)
+
+  * Monthly Ticket Volume peaks at January 2023 with 224 tickets.
 
 
 ### Ticket Trends
