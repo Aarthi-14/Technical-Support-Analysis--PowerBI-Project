@@ -160,14 +160,17 @@ Introduction:
 Visualizations play a crucial role in translating raw data into actionable insights. In this section, we will explore the key visualizations used to analyze Technical Support trends.
 The Dashboard consists of 3 sections.
 
-Section 1 - Ticket Summary  
+### Section 1 - Ticket Summary
+This section gives an overview of the Ticket volumes.
+
       ![Section1](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/86144f09-adae-4e28-af8d-1fd6e9a11355)
 
-Section 2 - Ticket Trends
+### Section 2 - Ticket Trends
+This section gives an overview of the Ticket trends.
 
       ![Section2](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/9c99cda2-36c8-496b-a9c6-d0064d06ae24)
 
-Section 3 - CSAT & Agent SLA Trends
+### Section 3 - CSAT & Agent SLA Trends
 
       ![Section3](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/10175e32-fbbd-43c1-a3c0-567578cab53f)
 
@@ -180,135 +183,6 @@ This visualization presents a comprehensive view of Overall Ticket Summary.
   
       ![Ticket summary](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/0f4cf38c-7fc4-42a9-8191-1ab519f5a35a)
 
-      
- 2.  Attrition count by Department:
-    - Used Funnel Chart for this visualization that gives attrition trends by department.
-  
-       ![Attritionbydept](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/326d6a9f-9e4b-4351-b25c-7369a8d4f4a5)
- 
- 4. Attrition by Job Role:
-    - Used Clustered column Chart for this visualization that gives attrition count of the Employees by Job Role.
-  
-      ![attritionbyjobrole](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/4c9bca1b-83ee-4286-b2f0-b21c8acac31f)
- 
- 7. Attrition by Gender:
-    - Used Donut Chart for this visualization that gives attrition count of the Employees by Gender.
-
-      ![attrition by gender](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/48a008b6-30fb-4f40-96ac-19978aa735ef)
-
-8. Attrition by Age Category:
-    - Created Calculated DAX column for Age category.
-    - Used Donut Chart for this visualization that gives attrition count of the Employees by Age Category.
-  
-      ![attrition by age](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/b7ef8e66-85c6-40f8-8fc3-51db87867059)
-
- 9. Attrition by Education:
-    - Used Clustered Bar Chart for this visualization that gives attrition Rate of the Employees by Education.
-
-      ![Attrition by education](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/bc60651e-8af8-4b28-828c-e3326a8c5fd3)
-
-
-### Companys Perspective Dashboard
-
-This dashboard presents a comprehensive view of overall attrition trends. 
-- By establishing a relation, with Attrition Rates to various metrics such as Average Monthly Salary, Average Monthly Rate, Average Training times last year and Average Work-Life Balance gives key valuable Insights that leads to higher Attrition Rates.
-- Users can Interact with any Visualization by using slicers for Gender/Department/Job Role.Implemented Slicers for filtering insights by Attrition, Department, Gender, and Job Role.
-
-![company's perspective](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/a79c3674-9043-4cd0-8c3f-91bf2777da3a)
-
- 1. Attrition Rate Vs Average Monthly Salary by Job Role:
-    - In this Line Chart Visual, Average Monthly of the Employees by Job Role is compared with Attrition Rate which provides an information that the Attrition Rate is higher for the Job Roles with Lower Pay such as Sales Representative and Lab Techncian role.
-    - Users can Interact with any Visualization by using slicers for Gender/Department.
-
-    ![2023-12-14_21h31_17](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/3c4d31a2-583d-4426-b81a-029204071173)
-
- 2. Attrition Rate Vs Average Monthly Salary and Average Rate by Job Role:
-    - In this Line and Clustered Column Chart Visual, Average Monthly Salary of the Employees and Average Rate by Job Role is compared with Attrition Rate which provides an information that the AVerage Monthly Salary is too low comparing to Average Monthly Rate fixed by the Company for the Job Roles Sales Representative and Lab Technician. It also corresponds to Higher Attrition Rate.
-    - Users can Interact with any Visualization by using slicers for Gender/Department.
-
-    ![Avg Rate](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/006b5b0a-f222-47ba-8b17-77aff4c3f66a)
-
- 3. Attrition Rate Vs Average Training times Last year by Job Role:
-    - In this Line Chart Visual, Average Training Times of the Employees by Job Role is compared with Attrition Rate which provides an information that the Job Role Sales Representative has Undergone Highest Training Times last Year has Highest Attrition Rate which clearly shows that Company incured Loss on Training Cost for these Job Roles.
-    - Users can Interact with any Visualization by using slicers for Gender/Department.
-
-    ![AVG training](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/e4623bee-c3ab-408e-9715-57c88c4c6a43)
-
-   
- 4. Attrition Count Vs Average Work Life Balance:
-    - Used Donut Chart for this visualization that gives attrition count based on the Average Work Life Balance.
-    - Users can Interact with any Visualization by using slicers for Gender/Department.
-
-    ![Work life balance](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/4857db27-9f44-4682-a63a-36416d1945d0)
-
-### Workforce Analysis Dashboard
-
-This dashboard presents a comprehensive view of overall Workforce trends by Attrition. 
-  - Key metrics include Average Age, Average Percentage Hike, Average Monthly salary, Environment satisfaction Index, Job satisfaction index, Job Involvement Index, Average Tenure at the Company by Job Role are there in this Dashboard.
-  - Users can Interact with any Visualization by using slicers for Gender/Department/Job Role/Attrition.
-
-    ![Workforce Analysis](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/cc5b2522-bff1-46bc-97b6-1c3b9cdd3cb7)
-
-1. Average Percentage Hike, Average Monthly Salary, Average Age, Average Distance From, Job Satisfaction Index, Job Involvement Index, Average Tenure at Current Role.
-   - Used Card Visuals for these metrics.
-   - User can interact with these Metrics by using Slicers For Department/Gender/Attrition/Job Role.
-
-     ![avg PERCT-3](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/d147d480-368f-44f7-9a1f-606e1d083c7f)
-     ![Avg monthly sal-3](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/07d81b7f-4129-4344-a34d-ab402c03eb46)
-     ![AVG_tENURE-3](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/fd985374-2669-4053-847a-325f9d7f5ea5)
-     
-     ![Avgdistance-3](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/4c2ed189-a0e8-49cb-9b7a-4a846e14f3ca)
-     ![Job involve-3](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/09905168-4d74-40f0-ba9b-082c680109b5)
-     ![job satis -3](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/3a0f875d-3920-4f43-bc99-78cdc9afcffb)
-
-2. Average Age.
-   - Used Gauge Visual for this Metric.
-   - User can interact with these Metrics by using Slicers For Department/Gender/Attrition/Job Role.
-
-     ![AVG age-3](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/bced4f37-7c25-454c-a88b-960bcccc175a)
-
-3. Average Tenure at the Company by Job Role:
-   - Used clustered Bar Chart for this visual to analyze Employees Tenure Patterns Based on the Job Role.
-   - User can interact with these Metrics by using Slicers For Department/Gender/Attrition/Job Role.
-  
-     ![Avg tenure by job-3](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/71d7476b-6862-45be-b1ff-8edfce67bae8)
-
-4. Average Tenure since Last Promotion by Job Role Vs Attrition Rate:
-   - Used Line and clustered Column Chart for this visual to analyze Employees Tenure Patterns Based on the Job Role with Attrition Rate.
-   - User can interact with these Metrics by using Slicers For Department/Gender/Attrition/Job Role.
-
-     ![avg tenurelastpromo-3](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/296881ca-ddf9-400f-96cd-7f512b192465)
-
-
-### Employee Wellness Dashboard
-This dashboard presents a comprehensive view of overall Employee Wellness.
-     - Analysing by the Key metrics include Relationship Satisfaction Index, Performance Satisfaction Index,Environment Satisfaction Index, Overtime Rate, Training Rate, Business Travel, Managerial Change Rate to find the Impact On Higher Attrition Rates.
-     - Users can Interact with Visualization by using slicers for Gender/Department/Job Role.
-
-
- 1. Overtime Rate, Training Rate, Average Tenure since Last Promotion, Relationship Satisfaction Index, Environment Satisfaction Index, Performance Rating Index.
-    - Used Gauge Visuals for these metrics.
-    - User can interact with these Metrics by using Slicers For Department/Gender/Attrition/Job Role.
-
-      ![overtimerate-4](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/4847c05a-073c-4c4c-8761-631e61da916c)
-      ![trainingrate-4](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/145f6c29-daed-4f9f-9bdd-b703c46f699b)
-      ![avgtenure-4](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/784afa31-70e0-45cf-9cb6-328aa8278c88)
-      
-      ![Relationshipindex-4](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/2944718d-d0f3-44db-903f-92cab1d798e5)
-      ![EnvironmentSatisfaction-4](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/52216090-2083-41d3-849c-773c6aed1871)
-      ![performancerating-4](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/2311c7a7-abff-4407-a262-f97c7c2a3d5e)
-
- 2. Attrition Rate Vs Business Travel by Job Role:
-    - In this Line and Stacked Column Chart Visual, Business Travel of the Employees by Job Role is compared with Attrition Rate which provides an information that the Job Role Sales with Highest Business Travel has Highest Attrition Rate.
-    - Users can Interact with any Visualization by using slicers for Gender/Department.
-      
-     ![Businesstravel-4](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/9a0013ad-d0a8-4462-acfb-c8ef93abb7a3)
-
-3. Managerial Change Rate Vs Attrition Rate:
-    - In this Line and Clustered Column Chart Visual, Mnagerial Change Rate of the Employees by Job Role is compared with Attrition Rate which provides an information that the Job Role Sales with Highest Business Travel has Highest Attrition Rate for the Sales Representative Job Role.
-    - Users can Interact with any Visualization by using slicers for Gender/Department.
-
-     ![Managerialchange-4](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/4e7177d9-e485-44f7-a4c1-3be82d88c686)
 
 ### Key Insights
 
