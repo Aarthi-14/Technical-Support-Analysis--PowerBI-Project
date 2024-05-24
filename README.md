@@ -182,6 +182,7 @@ This visualization presents a comprehensive view of Overall Ticket Summary.
 
 ### Key Insights
 
+
 #### Attrition Rate Trends:
 - Out of 1470 Total Employees, 237 Employees left the company which estimates 16.12 % Attrition Rate.
 #### Departmental Variances:
