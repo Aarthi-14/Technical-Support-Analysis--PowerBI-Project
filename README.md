@@ -114,33 +114,28 @@ Table: Technical Support Dataset
     - Measures the Average First Response Time.
     - Formula: Average First Response Time (Hours) = 
                VAR TotalFirstResponseTimeInSeconds = SUMX(
-                                                          FILTER('Data', 
-                                                          NOT(ISBLANK('Data'[Created date & time])) && 
-                                                          NOT(ISBLANK('Data'[First response time])) ),
-                                                          DATEDIFF('Data'[Created date & time], 'Data'[First response time], SECOND))
-                                                          VAR CountFirstResponseTickets = COUNTROWS(
-                                                          FILTER('Data', 
-                                                          NOT(ISBLANK('Data'[Created date & time])) && 
-                                                          NOT(ISBLANK('Data'[First response time])) ))
-                                                          RETURN IF(CountFirstResponseTickets = 0, BLANK(), TotalFirstResponseTimeInSeconds / CountFirstResponseTickets / 3600)
+      FILTER('Data', NOT(ISBLANK('Data'[Created date & time])) && 
+      NOT(ISBLANK('Data'[First response time])) ),
+      DATEDIFF('Data'[Created date & time], 'Data'[First response time], SECOND))
+      VAR CountFirstResponseTickets = COUNTROWS(
+      FILTER('Data', NOT(ISBLANK('Data'[Created date & time])) && 
+      NOT(ISBLANK('Data'[First response time])) ))
+      RETURN IF(CountFirstResponseTickets = 0,BLANK(),TotalFirstResponseTimeInSeconds/CountFirstResponseTickets / 3600)  
 10.  Average Resolution Time:
     - Measures the Average Resolution Time.
     - Formula: Average Resolution Time (Hours) = 
-                                                VAR TotalResolutionTime = SUMX(FILTER('Data', NOT(ISBLANK('Data'[Resolution time])) && NOT(ISBLANK('Data'[Created date & time]))),
-                                                                                        DATEDIFF('Data'[Created date & time], 'Data'[Resolution time], SECOND))
-                                                VAR CountResolvedTickets = COUNTROWS(FILTER('Data', NOT(ISBLANK('Data'[Resolution time])) && NOT(ISBLANK('Data'[Created date & time]))))
-                                                RETURN IF(CountResolvedTickets = 0, BLANK(), TotalResolutionTime / CountResolvedTickets / 3600)
-
+    VAR TotalResolutionTime = SUMX(FILTER('Data', NOT(ISBLANK('Data'[Resolution time])) && NOT(ISBLANK('Data'[Created date & time]))),
+    DATEDIFF('Data'[Created date & time], 'Data'[Resolution time], SECOND))
+    VAR CountResolvedTickets = COUNTROWS(FILTER('Data', NOT(ISBLANK('Data'[Resolution time])) && NOT(ISBLANK('Data'[Created date & time]))))
+    RETURN IF(CountResolvedTickets = 0, BLANK(), TotalResolutionTime / CountResolvedTickets / 3600)
 11. Weekly vs Weekend Ticket Volume:
     - Indicates the ticket Volume of Weekdays or Weekend. 
-    - Formula:Weekday vs. Weekend Ticket Volume = AVERAGEX('Calender', IF('Calender'[Weekday or Weekend] = 1, [Daily Ticket Volume], BLANK()))
-    - 
+    - Formula:Weekday vs. Weekend Ticket Volume = AVERAGEX('Calender', IF('Calender'[Weekday or Weekend] = 1, [Daily Ticket Volume], BLANK()))    
 12. CSAT Score (%) Index:
     - Represents the Customer Satisfaction towards the Agent Response.
     - Formula: CSAT Score (%) = VAR TotalResponses = COUNTAX('Data', 'Data'[Survey results])
                                 VAR SatisfiedResponses = CALCULATE(COUNTAX('Data', 'Data'[Survey results]),'Data'[Survey results] >= 4)
                                 RETURN DIVIDE(SatisfiedResponses, TotalResponses, 0)
-
 13. SLA Violated for First Response:
     - Represents the SLA Violation for First Response.
     - Formula: SLA Violated for First Response = CALCULATE(COUNT(Data[Ticket ID]), Data[SLA For first response] = "SLA Violated")
