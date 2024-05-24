@@ -1,6 +1,8 @@
 # Technical Support Analysis - PowerBI Project
 
-## Table of Contents 
+  ![Onyx Technical Support Analysis_May'24 - Aarthi](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/a73fa774-1bd8-4d81-a485-813f7d66793e)
+
+### Table of Contents 
 - [Project Overview](#project-overview) 
 - [Data Sources](#data-sources)
 - [Objective](#objective)
