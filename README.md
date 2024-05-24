@@ -152,19 +152,19 @@ Heather Urry had the fewest SLA violations for resolution (42 tickets).
 
 ### Recommendations
 #### 1. Implement an improved after-hours support strategy.
-	Since the maximum number of tickets (1566) were raised during after-hours, consider increasing staffing or offering automated support solutions during these times to handle the high volume effectively.
+Since the maximum number of tickets (1566) were raised during after-hours, consider increasing staffing or offering automated support solutions during these times to handle the high volume effectively.
 #### 2. Optimize First Response Time (FRT):
-	Conduct training sessions focused on improving first response times. Introduce performance incentives for agents who consistently meet or exceed FRT SLAs. 
+Conduct training sessions focused on improving first response times. Introduce performance incentives for agents who consistently meet or exceed FRT SLAs. 
 #### 3. Enhance Resolution Time:
-	Identify bottlenecks in the resolution process and implement process improvements. This could include better documentation, enhanced troubleshooting tools, and more efficient escalation procedures.
+Identify bottlenecks in the resolution process and implement process improvements. This could include better documentation, enhanced troubleshooting tools, and more efficient escalation procedures.
 #### 4. Focus on High-Volume Topics and Categories:
-	Develop detailed knowledge base articles and self-service resources for these high-volume areas. Provide specialized training for support agents on these topics to enhance their expertise and efficiency.
+Develop detailed knowledge base articles and self-service resources for these high-volume areas. Provide specialized training for support agents on these topics to enhance their expertise and efficiency.
 #### 5. Monitor and Enhance CSAT Scores:
-	Regularly review customer feedback to identify areas for improvement. Implement follow-up procedures for negative feedback to resolve customer issues and improve satisfaction. Recognize and reward agents with high CSAT scores to encourage positive performance.
+Regularly review customer feedback to identify areas for improvement. Implement follow-up procedures for negative feedback to resolve customer issues and improve satisfaction. Recognize and reward agents with high CSAT scores to encourage positive performance.
 #### 6. Enhance Email Support Efficiency:
-	Streamline the email ticketing process with templates and automated responses for common queries. Ensure there is adequate after-hours email support to handle the volume effectively.
+Streamline the email ticketing process with templates and automated responses for common queries. Ensure there is adequate after-hours email support to handle the volume effectively.
 #### 7. Encourage Customer Feedback and Survey Participation:
-	The dataset includes many empty survey values, indicating that a significant number of customers did not participate in the survey. Actively encourage customers to provide their valuable feedback and participate in surveys regarding the agent service.
+The dataset includes many empty survey values, indicating that a significant number of customers did not participate in the survey. Actively encourage customers to provide their valuable feedback and participate in surveys regarding the agent service.
 
 ### Challenges faced
 The dataset contains numerous empty survey responses, indicating a significant number of customers did not participate in the survey. This lack of participation poses a challenge in accurately analyzing agent performance, as the incomplete data may not fully reflect customer satisfaction levels and feedback.
