@@ -19,28 +19,26 @@ This data analysis project aims to provide valuable insights by analyzing the fu
 Technical Support data: The primary dataset is in CSV file "Onyx Data -DataDNA Dataset Challenge - Technical Support Dataset - May 2024.xlsx" containing Technical Support Details of the Organisation.
 
 ### Objective
-This Analysis aims to analyzing the functioning of technical support through KPIs like Ticket Trends, SLA adherence patterns & CSAT score, etc.
+This Analysis aims to analyze the functioning of technical support through KPIs like Ticket Trends, SLA adherence patterns & CSAT score, etc.
 This Interactive Dashboard answers the All the following Challenge Questions:
 1. What are the peak ticket creation times?
 2. How does the first response and resolution times compare against SLAs?
 3. Explore customer satisfaction rates across agents, topics and other categories.
 
-### Data Visualization
-Introduction:
-Visualizations play a crucial role in translating raw data into actionable insights. In this section, we will explore the key visualizations used to analyze Technical Support trends.
-The Dashboard consists of 3 sections.
+### Analysis:
+Visualizations play a crucial role in translating raw data into actionable insights. In this section, we will explore the key visualizations used to analyze Technical Support trends.The Dashboard consists of 3 sections.
 
-### Section 1 - Ticket Summary
+### Ticket Summary
 This section gives a summary of the Ticket volumes, the daily, monthly & weekly ticket Volume & the Peak Ticket Creation hour trend.
 
   ![Section1](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/86144f09-adae-4e28-af8d-1fd6e9a11355)
 
-### Section 2 - Ticket Trends
+### Ticket Trends
 This section gives a detailed view of the Ticket trends over Topic, Source, Product & Geography & SLA Pattern for First Response & Resolution.
 
   ![Section2](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/9c99cda2-36c8-496b-a9c6-d0064d06ae24)
 
-### Section 3 - CSAT & Agent SLA Trends
+### CSAT & Agent SLA Trends
 This section gives a detailed view of the CSAT Trend for Topic, Agent & Agent SLA for First Response & Resolution.
 
   ![Section3](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/10175e32-fbbd-43c1-a3c0-567578cab53f)
@@ -50,7 +48,7 @@ This section gives a detailed view of the CSAT Trend for Topic, Agent & Agent SL
 ### Ticket Summary
 This visualization presents a comprehensive view of Overall Ticket Summary. 
 - Key metrics include Total Tickets, Resolved Tickets, In Progress Tickets, Peak Ticket Creation Time,Work Hour Tickets, After Hour Tickets, Average FRT, Average RT.
-- Users can Interact with Visualization by using slicers for Month.
+- Users can Interact with Visualization by using slicers for Months.
   
   ![Ticket summary](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/0f4cf38c-7fc4-42a9-8191-1ab519f5a35a)
 
