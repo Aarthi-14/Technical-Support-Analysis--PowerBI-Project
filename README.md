@@ -9,11 +9,11 @@
 - [Project Overview](#project-overview) 
 - [Data Sources](#data-sources)
 - [Objective](#objective)
+- [Comprehensive-Data-Analysis](comprehensive-data-analysis)
 - [Ticket Summary](#ticket-summary)
 - [Ticket Trends](#ticket-trends)
 - [CSAT & Agent SLA](#csat-&-agent-sla)
 - [Key Insights](#key-insights)
-- [Succession Planning](#succession-planning)
 - [Recommendations](#recommendations)
 - [Conclusion](#conclusion)
   
@@ -30,18 +30,17 @@ This Interactive Dashboard answers the All the following Challenge Questions:
 2. How does the first response and resolution times compare against SLAs?
 3. Explore customer satisfaction rates across agents, topics and other categories.
 
-### Analysis:
+### Comprehensive Data Analysis:
 Visualizations play a crucial role in translating raw data into actionable insights. In this section, we will explore the key visualizations used to analyze Technical Support trends.The Dashboard consists of 3 sections.
 
-### Ticket Volume 
+### Ticket Summary
 This section gives a summary of the Ticket volumes, the daily, monthly & weekly ticket Volume & the Peak Ticket Creation hour trend.
 
   ![TC SUMMARY](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/66d21c3d-64f7-489c-b81e-b940bccc6272)
 
 
-### Ticket Summary
-This visualization presents a comprehensive view of Overall Ticket Summary. 
-- Key metrics include Total Tickets, Resolved Tickets, In Progress Tickets, Peak Ticket Creation Time,Work Hour Tickets, After Hour Tickets, Average FRT, Average RT.
+### Ticket KPIs
+This visualization presents a comprehensive view of Overall Ticket Summary. The Key metrics include Total Tickets, Resolved Tickets, In Progress Tickets, Peak Ticket Creation Time,Work Hour Tickets, After Hour Tickets, Average FRT, Average RT.
   
   ![Ticket1](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/49d36686-d5b7-45b4-b5fe-3cdd5ced0d52)
 
@@ -77,17 +76,17 @@ This section gives a detailed view of the Ticket trends over Topic, Source, Prod
 
   ![tc trend](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/105b1755-fa33-4dec-9bbe-76fa80beffee)
 
-#### SLA for First Response & SLA for Resoltion
-  ![sla](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/274f679a-9e50-462d-928a-e1aa461c9c20)
-
-*  ﻿SLA for First Response Category has 2019 tickets are under "Within SLA"  & 311﻿ Tickets are SLA Violated.
-*  ﻿SLA for Resolution Category has 1547 tickets under "Within SLA" & 783﻿ Tickets are SLA Violated.
-  
 #### Topic Trend
   ![Ticket Trends](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/46af544f-63a8-4b35-8fb6-5de4df2bf569)
 
   * Under Product Setup Topic, out of 630 (Maximum) tickets, 374 tickets  are Resolved based on " Within SLA" of both SLA for First Response & SLA for Resolution.
   * Out of 525 tickets, 300 tickets are resolved in Pricing & licensing category.
+
+#### SLA for First Response & SLA for Resoltion
+  ![sla](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/274f679a-9e50-462d-928a-e1aa461c9c20)
+
+*  ﻿SLA for First Response Category has 2019 tickets are under "Within SLA"  & 311﻿ Tickets are SLA Violated.
+*  ﻿SLA for Resolution Category has 1547 tickets under "Within SLA" & 783﻿ Tickets are SLA Violated.
 
 #### Source & Product Trend
   ![source   Product](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/6140ce4c-b4c1-4473-9378-254b3e357a26)
