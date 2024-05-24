@@ -171,5 +171,8 @@ The dataset contains numerous empty survey responses, indicating a significant n
 ### Conclusion:
 In conclusion, this technical support analysis project has provided valuable insights into key performance metrics and trends within the support team. By leveraging comprehensive data analysis, we have identified areas of strength and opportunities for improvement, which can significantly enhance the efficiency and effectiveness of the technical support operations.By implementing these recommendations, the technical support team can enhance their performance, resulting in a potential increase in CSAT scores and overall customer satisfaction. This project has laid a solid foundation for ongoing analysis and improvement in technical support operations.
 
+Note:
+This Dashboard is the submission for Onyx MAY Month DataDNA Challenge(May 2024).
+
 #### Created & Presented by -Aarthi Duraisingam @ Aspiring Data Analyst
 Date- 22/05/2024
