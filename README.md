@@ -59,16 +59,24 @@ This visualization presents a comprehensive view of Overall Ticket Summary.
 
   * Weekly volume trends shows maximum number of Tickets(63) was created on Week Number 4.
 
-#### Weekly Ticket Volume 
+#### Monthly Ticket Volume 
   ![Monthly tc](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/946ceac7-1c24-4f6a-9436-f66b907dc666)
 
   * Monthly Ticket Volume peaks at January 2023 with 224 tickets.
 
+#### Peak Ticket Creation Hour:
+  ![Peak tc](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/2304e067-47a4-44b5-9bff-e5ad7b4fd0a0)
 
+  * The Overall Peak Ticket Creation Hour is at ﻿15﻿ Hours in which Maximum number of tickets(135 tickets) has been raised during that Hour.
+    
 ### Ticket Trends
 This section gives a detailed view of the Ticket trends over Topic, Source, Product & Geography & SLA Pattern for First Response & Resolution.
 
   ![Section2](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/9c99cda2-36c8-496b-a9c6-d0064d06ae24)
+
+#### Topic Trend
+  ![Ticket Trends](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/46af544f-63a8-4b35-8fb6-5de4df2bf569)
+
 
 ### CSAT & Agent SLA Trends
 This section gives a detailed view of the CSAT Trend for Topic, Agent & Agent SLA for First Response & Resolution.
