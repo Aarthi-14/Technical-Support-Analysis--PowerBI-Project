@@ -120,6 +120,10 @@ This section gives a detailed view of the CSAT Trend for Topic, Agent & Agent SL
   ![Agent SLA frt](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/4cdc1913-9bac-438c-bc7d-2a191d8b8b5f)
   
  * Michele Whyatt attended 90% of tickets within SLA for First Response and Minimum of 18 tickets, under "SLA violated for First Response" out of his Total 186 Tickets.
+
+#### Agent SLA for Resolution
+  ![Agent SLA RT](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/f098dccc-8559-4068-9da9-5a14b6efc661)
+
  * Heather Urry attended maximum(76%) of tickets within SLA for Resolution and Minimum of 42 Tickets, under "SLA Violated for Resolution" out of his total 177 tickets.
 
 ### Key Insights
