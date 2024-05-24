@@ -72,16 +72,35 @@ This visualization presents a comprehensive view of Overall Ticket Summary.
 ### Ticket Trends
 This section gives a detailed view of the Ticket trends over Topic, Source, Product & Geography & SLA Pattern for First Response & Resolution.
 
-  ![Section2](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/9c99cda2-36c8-496b-a9c6-d0064d06ae24)
+  ![tc trend](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/105b1755-fa33-4dec-9bbe-76fa80beffee)
 
+#### SLA for First Response & SLA for Resoltion
+  ![sla](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/274f679a-9e50-462d-928a-e1aa461c9c20)
+
+*  ﻿SLA for First Response Category has 2019 tickets are under "Within SLA"  & 311﻿ Tickets are SLA Violated.
+*  ﻿SLA for Resolution Category has 1547 tickets under "Within SLA" & 783﻿ Tickets are SLA Violated.
+  
 #### Topic Trend
   ![Ticket Trends](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/46af544f-63a8-4b35-8fb6-5de4df2bf569)
 
+  * Under Product Setup Topic, out of 630 (Maximum) tickets, 374 tickets  are Resolved based on " Within SLA" of both SLA for First Response & SLA for Resolution.
+  * Out of 525 tickets, 300 tickets are resolved in Pricing & licensing category.
 
+#### Source & Product Trend
+  ![source   Product](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/6140ce4c-b4c1-4473-9378-254b3e357a26)
+
+  * Out of ﻿1234﻿ Email Tickets, ﻿780﻿ are Resolved and ﻿844﻿ are tickets raised during After Hours.
+  * Ready to use Software is the Product Category in which Maximum Number of ﻿1010﻿ Tickets were raised, in which ﻿610﻿ tickets were Resolved both based on " Within SLA" of both SLA for First Response & SLA for Resolution. 
+
+
+#### Geography Trend 
+  
 ### CSAT & Agent SLA Trends
 This section gives a detailed view of the CSAT Trend for Topic, Agent & Agent SLA for First Response & Resolution.
 
   ![Section3](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/10175e32-fbbd-43c1-a3c0-567578cab53f)
+
+#### CSAT Trend
 
 
 
