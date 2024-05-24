@@ -1,6 +1,6 @@
 # Technical Support Analysis - PowerBI Project
 
-## Created by Aarthi Duraisingam [Linkedin Profile]{www.linkedin.com/in/aarthi-duraisingam-2438b7248}(www.linkedin.com)
+## Created by Aarthi Duraisingam [Linkedin Profile]{[https://www.linkedin.com/in/aarthi-duraisingam-2438b7248/)
   Technical support, also known as tech support, is a call centre type customer service provided by companies to advise and assist registered users with issues concerning their technical products. This Analysis aims to analyzing the functioning of technical support through KPIs like Ticket Trends, SLA adherence patterns & CSAT score, etc.
 
   ![Onyx Technical Support Analysis_May'24 - Aarthi](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/a73fa774-1bd8-4d81-a485-813f7d66793e)
