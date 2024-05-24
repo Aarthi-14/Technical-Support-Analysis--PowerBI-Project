@@ -125,7 +125,7 @@ Table: Technical Support Dataset
                                                           NOT(ISBLANK('Data'[Created date & time])) && 
                                                           NOT(ISBLANK('Data'[First response time])) ))
                                                           RETURN IF(CountFirstResponseTickets = 0, BLANK(), TotalFirstResponseTimeInSeconds / CountFirstResponseTickets / 3600)
-11.  Average Resolution Time:
+10.  Average Resolution Time:
     - Measures the Average Resolution Time.
     - Formula: Average Resolution Time (Hours) = 
                                                 VAR TotalResolutionTime = SUMX(FILTER('Data', NOT(ISBLANK('Data'[Resolution time])) && NOT(ISBLANK('Data'[Created date & time]))),
@@ -133,26 +133,26 @@ Table: Technical Support Dataset
                                                 VAR CountResolvedTickets = COUNTROWS(FILTER('Data', NOT(ISBLANK('Data'[Resolution time])) && NOT(ISBLANK('Data'[Created date & time]))))
                                                 RETURN IF(CountResolvedTickets = 0, BLANK(), TotalResolutionTime / CountResolvedTickets / 3600)
 
-12. Weekly vs Weekend Ticket Volume:
+11. Weekly vs Weekend Ticket Volume:
     - Indicates the ticket Volume of Weekdays or Weekend. 
     - Formula:Weekday vs. Weekend Ticket Volume = AVERAGEX('Calender', IF('Calender'[Weekday or Weekend] = 1, [Daily Ticket Volume], BLANK()))
     - 
-13. CSAT Score (%) Index:
+12. CSAT Score (%) Index:
     - Represents the Customer Satisfaction towards the Agent Response.
     - Formula: CSAT Score (%) = VAR TotalResponses = COUNTAX('Data', 'Data'[Survey results])
                                 VAR SatisfiedResponses = CALCULATE(COUNTAX('Data', 'Data'[Survey results]),'Data'[Survey results] >= 4)
                                 RETURN DIVIDE(SatisfiedResponses, TotalResponses, 0)
 
-14. SLA Violated for First Response:
+13. SLA Violated for First Response:
     - Represents the SLA Violation for First Response.
     - Formula: SLA Violated for First Response = CALCULATE(COUNT(Data[Ticket ID]), Data[SLA For first response] = "SLA Violated")
-15. SLA Violated for Resolution:
+14. SLA Violated for Resolution:
     - Represents the SLA Violation for Resolution.
     - Formula: SLA Violated for Resolution = CALCULATE(COUNT(Data[Ticket ID]), Data[SLA For Resolution] = "SLA Violated")
-16. Within_SLA First Response:
+15. Within_SLA First Response:
     - Measures the Within_SLA First Response
     - Formula: Within_SLA First Response = CALCULATE(COUNT(Data[Ticket ID]), Data[SLA For first response] = "Within SLA")
-17.  Within_SLA for Resolution:
+16.  Within_SLA for Resolution:
     - Indicates the Within_SLA for Resolution.
     - Formula: Within_SLA for Resolution = CALCULATE(COUNT(Data[Ticket ID]), Data[SLA For Resolution] = "Within SLA")
 
@@ -160,20 +160,27 @@ Table: Technical Support Dataset
 ### Data Visualization
 Introduction:
 Visualizations play a crucial role in translating raw data into actionable insights. In this section, we will explore the key visualizations used to analyze Technical Support trends.
-     
+The Dashboard consists of 3 sections.
+
+Section 1 - Ticket Summary  
+      ![Section1](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/86144f09-adae-4e28-af8d-1fd6e9a11355)
+
+Section 2 - Ticket Trends
+
+      ![Section2](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/9c99cda2-36c8-496b-a9c6-d0064d06ae24)
+
+Section 3 - CSAT & Agent SLA Trends
+
+      ![Section3](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/10175e32-fbbd-43c1-a3c0-567578cab53f)
+
+
+
 ### Ticket Summary
 This visualization presents a comprehensive view of Overall Ticket Summary. 
 - Key metrics include Total Tickets, Resolved Tickets, In Progress Tickets, Peak Ticket Creation Time,Work Hour Tickets, After Hour Tickets, Average FRT, Average RT.
 - Users can Interact with Visualization by using slicers for Month.
-
-  ![Section1](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/86144f09-adae-4e28-af8d-1fd6e9a11355)
-
- 
-
- 1. Total No. Of Employees, Attrition Count and Attrition Rate.
-    - Used Card Visuals that gives the Total No. of Employees, Attrition Count and Attrition Rate.
-
-      ![kpi](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/f6934c1c-2289-42e0-bcf8-bdaee6febe22)
+  
+      ![Ticket summary](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/0f4cf38c-7fc4-42a9-8191-1ab519f5a35a)
 
       
  2.  Attrition count by Department:
