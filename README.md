@@ -112,83 +112,58 @@ Table: Technical Support Dataset
    - Formula: After Hours Tickets = CALCULATE([Daily Ticket Volume],FILTER('Data',
                                                                     HOUR('Data'[Created time]) < 9 ||
                                                                     HOUR('Data'[Created time]) >= 17))
+9.  Average First Response Time:
+    - Measures the Average First Response Time.
+    - Formula: Average First Response Time (Hours) = 
+               VAR TotalFirstResponseTimeInSeconds = SUMX(
+                                                          FILTER('Data', 
+                                                          NOT(ISBLANK('Data'[Created date & time])) && 
+                                                          NOT(ISBLANK('Data'[First response time])) ),
+                                                          DATEDIFF('Data'[Created date & time], 'Data'[First response time], SECOND))
+                                                          VAR CountFirstResponseTickets = COUNTROWS(
+                                                          FILTER('Data', 
+                                                          NOT(ISBLANK('Data'[Created date & time])) && 
+                                                          NOT(ISBLANK('Data'[First response time])) ))
+                                                          RETURN IF(CountFirstResponseTickets = 0, BLANK(), TotalFirstResponseTimeInSeconds / CountFirstResponseTickets / 3600)
+11.  Average Resolution Time:
+    - Measures the Average Resolution Time.
+    - Formula: Average Resolution Time (Hours) = 
+                                                VAR TotalResolutionTime = SUMX(FILTER('Data', NOT(ISBLANK('Data'[Resolution time])) && NOT(ISBLANK('Data'[Created date & time]))),
+                                                                                        DATEDIFF('Data'[Created date & time], 'Data'[Resolution time], SECOND))
+                                                VAR CountResolvedTickets = COUNTROWS(FILTER('Data', NOT(ISBLANK('Data'[Resolution time])) && NOT(ISBLANK('Data'[Created date & time]))))
+                                                RETURN IF(CountResolvedTickets = 0, BLANK(), TotalResolutionTime / CountResolvedTickets / 3600)
 
-9. Average Monthly Rate:
-    - Measures the Average rate fixed by the company.
-    - Formula: AVG_Rate = CALCULATE(AVERAGE('HR-Employee-Attrition'[MonthlyRate]))
-10. Average Tenure at the Company:
-    - Measures the Average Tenure of the Employees at the company.
-    - Formula: AVG_Tenure_at_the_Company = CALCULATE(AVERAGE('HR-Employee-Attrition'[YearsAtCompany]))
-11. Average Tenute since Last Promotion:
-    - Measures the Average Tenure of the Employees since Last Promotion
-    - Formula: AVG_Tenure_since_LastPromotion = CALCULATE(AVERAGE('HR-Employee-Attrition'[YearsSinceLastPromotion]))
-12. Average Work-Life Balance:
-    - Indicates the average work-life balance satisfaction of departing employees.
-    - Formula: AVG_WorkLife_Balance = CALCULATE(AVERAGE('HR-Employee-Attrition'[WorkLifeBalance]),
-                                                'HR-Employee-Attrition'[Attrition] = "Yes")
-13. Environment Satisfaction Index:
-    - Represents the average level of satisfaction with the work environment.
-    - Formula: Environment_Satisfaction_Index = CALCULATE(AVERAGE('HR-Employee-Attrition'[EnvironmentSatisfaction]))
-14. Job Involvement Index:
-    - Represents the average level of job involvement among employees.
-    - Formula: Job_Involvement_Index = CALCULATE(AVERAGE('HR-Employee-Attrition'[JobInvolvement]))
-15. Job Satisfaction Index:
-    - Represents the average level of job satisfaction among employees.
-    - Formula: Job_Satisfaction_Index = CALCULATE(AVERAGE('HR-Employee-Attrition'[JobSatisfaction]))
-16. Managerial Change Rate:
-    - Measures the percentage of employees who recently changed managers.
-    - Formula: Managerial_Change_Rate = COUNTROWS(FILTER('HR-Employee-Attrition', 'HR-Employee-Attrition'[YearsWithCurrManager] = 0)) / COUNTROWS('HR-Employee-Attrition')
-17. OverTime Rate:
-    - Indicates the percentage of departing employees who worked overtime.
-    - Formula: OverTime_Rate = DIVIDE(
-                          COUNTROWS(FILTER('HR-Employee-Attrition', 'HR-Employee-Attrition'[OverTime_New] = 1)),
-                          [Total No.of Employees],0) * 100
-18. Performance Rating Index:
-    - Analyzes the distribution of performance ratings.
-    - Formula: Performane_Rating_Index = AVERAGE('HR-Employee-Attrition'[PerformanceRating])
-19. Ralationship Satisfaction Index:
-    - Represents the average level of relationship satisfaction among employees.
-    - Formula: Relationship_Satis_Index = CALCULATE(AVERAGE('HR-Employee-Attrition'[RelationshipSatisfaction]))
-20. Training Rate:
-    - Measures the percentage of employees who underwent training.
-    - Formula: Training_Rate = DIVIDE(sum('HR-Employee-Attrition'[TrainingTimesLastYear]), [Attrition Count], 0) *100
+12. Weekly vs Weekend Ticket Volume:
+    - Indicates the ticket Volume of Weekdays or Weekend. 
+    - Formula:Weekday vs. Weekend Ticket Volume = AVERAGEX('Calender', IF('Calender'[Weekday or Weekend] = 1, [Daily Ticket Volume], BLANK()))
+    - 
+13. CSAT Score (%) Index:
+    - Represents the Customer Satisfaction towards the Agent Response.
+    - Formula: CSAT Score (%) = VAR TotalResponses = COUNTAX('Data', 'Data'[Survey results])
+                                VAR SatisfiedResponses = CALCULATE(COUNTAX('Data', 'Data'[Survey results]),'Data'[Survey results] >= 4)
+                                RETURN DIVIDE(SatisfiedResponses, TotalResponses, 0)
 
+14. SLA Violated for First Response:
+    - Represents the SLA Violation for First Response.
+    - Formula: SLA Violated for First Response = CALCULATE(COUNT(Data[Ticket ID]), Data[SLA For first response] = "SLA Violated")
+15. SLA Violated for Resolution:
+    - Represents the SLA Violation for Resolution.
+    - Formula: SLA Violated for Resolution = CALCULATE(COUNT(Data[Ticket ID]), Data[SLA For Resolution] = "SLA Violated")
+16. Within_SLA First Response:
+    - Measures the Within_SLA First Response
+    - Formula: Within_SLA First Response = CALCULATE(COUNT(Data[Ticket ID]), Data[SLA For first response] = "Within SLA")
+17.  Within_SLA for Resolution:
+    - Indicates the Within_SLA for Resolution.
+    - Formula: Within_SLA for Resolution = CALCULATE(COUNT(Data[Ticket ID]), Data[SLA For Resolution] = "Within SLA")
 
-#### DAX Calculated Columns
-
-1. Age Category:
-   - Purpose: Categorizes employees into specific age groups for demographic analysis.
-   - Formula: Age_Category = SWITCH(
-                      TRUE(),
-                      VALUE('HR-Employee-Attrition'[Age]) < 30, "BELOW 30",
-                      AND(VALUE('HR-Employee-Attrition'[Age]) >= 30, VALUE('HR-Employee-Attrition'[Age]) <= 40), "30-40",
-                      VALUE('HR-Employee-Attrition'[Age]) > 40, "ABOVE 40",
-                      BLANK())
-   - Description: The Age Category DAX column uses the SWITCH function to categorize employees into different age groups based on their age.
-
-2. Distance from Home:
-   - Purpose: Categorizes employees based on the distance of their home from the workplace. 
-   - Distancefromhom = SWITCH(
-                          TRUE(),
-                          VALUE('HR-Employee-Attrition'[DistanceFromHome]) < 10, "< 10 km",
-                          AND(VALUE('HR-Employee-Attrition'[DistanceFromHome])>= 10, VALUE('HR-Employee-Attrition'[DistanceFromHome]) <= 20), "10 -20 km",
-                          VALUE('HR-Employee-Attrition'[DistanceFromHome]) > 20, "20-30 km",
-                          BLANK())
-   - Description: The DistanceFromHome Category DAX column categorizes employees based on the distance (in kilometers) from their home to the workplace using the SWITCH function
 
 ### Data Visualization
 Introduction:
-Visualizations play a crucial role in translating raw data into actionable insights. In this section, we will explore the key visualizations used to analyze HR attrition trends.
-
-Key Visualizations:
-1. OverAll KPI Dashboard
-2. Company's Perspective Dashboard
-3. Workforce Analysis Dashboard
-4. Employee Wellness Dashboard
+Visualizations play a crucial role in translating raw data into actionable insights. In this section, we will explore the key visualizations used to analyze Technical Support trends.
      
-### OverAll KPI Dashboard
-This dashboard presents a comprehensive view of overall attrition trends. 
-- Key metrics include Attrition Rate, Total Employees, Attrition Count and Attrition count by Department/Job Role/Gender/Age Category/Education.
+### Ticket Summary
+This visualization presents a comprehensive view of Overall Ticket Summary. 
+- Key metrics include Total Tickets, Resolved Tickets, In Progress Tickets, Peak Ticket Creation Time,Work Hour Tickets, After Hour Tickets, Average FRT, Average RT.
 - Users can Interact with Visualization by using slicers for Gender/Department/Job Role.
 
 ![overallkpi](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/39fada9b-2ccd-4198-839a-fc6d9df6684f)   
