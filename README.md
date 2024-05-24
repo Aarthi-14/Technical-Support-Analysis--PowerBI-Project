@@ -92,9 +92,11 @@ This section gives a detailed view of the Ticket trends over Topic, Source, Prod
   * Out of ﻿1234﻿ Email Tickets, ﻿780﻿ are Resolved and ﻿844﻿ are tickets raised during After Hours.
   * Ready to use Software is the Product Category in which Maximum Number of ﻿1010﻿ Tickets were raised, in which ﻿610﻿ tickets were Resolved both based on " Within SLA" of both SLA for First Response & SLA for Resolution. 
 
+#### Geography Trend of SLA for First Response
+  ![Geography Trends](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/885b9c78-24c8-437d-9401-26255b70eb57)
 
-#### Geography Trend 
-  
+* Germany has the Hightest ticket volume of 306 in which 259 tickets are "within SLA" for First Response & 47 tickets are SLA violated.
+* 
 ### CSAT & Agent SLA Trends
 This section gives a detailed view of the CSAT Trend for Topic, Agent & Agent SLA for First Response & Resolution.
 
