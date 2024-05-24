@@ -1,5 +1,8 @@
 # Technical Support Analysis - PowerBI Project
 
+## Created by Aarthi Duraisingam [Linkedin Profile](www.linkedin.com/in/aarthi-duraisingam-2438b7248)
+  Technical support, also known as tech support, is a call centre type customer service provided by companies to advise and assist registered users with issues concerning their technical products. This Analysis aims to analyzing the functioning of technical support through KPIs like Ticket Trends, SLA adherence patterns & CSAT score, etc.
+
   ![Onyx Technical Support Analysis_May'24 - Aarthi](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/a73fa774-1bd8-4d81-a485-813f7d66793e)
 
 ### Table of Contents 
@@ -114,63 +117,57 @@ This section gives a detailed view of the CSAT Trend for Topic, Agent & Agent SL
 
  * Connor Danielovitch ranked Overall Highest CSAT Score of ﻿69.01%﻿ & he got 100% CSAT Score in Training Request & he tracked more than 60% of CSAT Score in each topic.
 
+#### Agent SLA for First Response
+  ![Agent SLA frt](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/4cdc1913-9bac-438c-bc7d-2a191d8b8b5f)
+  
+ * Michele Whyatt attended 90% of tickets within SLA for First Response and Minimum of 18 tickets, under "SLA violated for First Response" out of his Total 186 Tickets.
+ * Heather Urry attended maximum(76%) of tickets within SLA for Resolution and Minimum of 42 Tickets, under "SLA Violated for Resolution" out of his total 177 tickets.
 
 ### Key Insights
+1. Resolution and SLA Adherence:
+Out of 2330 total tickets, 1355 were resolved within the SLA for both first response and resolution times.
+400 tickets are still in progress, highlighting a need for improved resolution processes.
 
+2.Ticket Volume Trends:
+The peak ticket creation hour is at the 15th hour, with the majority of tickets (1566) being raised during after-hours, compared to 764 during work hours.
 
-#### Attrition Rate Trends:
-- Out of 1470 Total Employees, 237 Employees left the company which estimates 16.12 % Attrition Rate.
-#### Departmental Variances:
-- 133  is the Attrition count in R&D Department, followed by Sales Department with 92 Attrition count.
-- Lab Technician is the Job Role which has the Highest Attrition Count of 62 in R&D Department with Average Monthly salary of 3237.14.
-- Sales Representative is the Job Role which has Highest Attrition Rate of 39.76% with Average Monthly salary of 2626.
-#### Demographic Analysis:
-- Attrition by Gender gives an Insight that out of 237 Employees, 150 are the Male Employees and 87 are the Female Employees.
-- The Average Age of the Employees Under Attrition Category is 34.
-#### Correlation with Satisfaction Surveys:
-- The Job Satisfaction Index is 2 (Employees under Attrition Category) which shows Employees are dissatisfied with their Job.
-- The Average Work-Life Balance of the Employees under Attrition category is 3(Average).
-#### Identification of High-Risk Roles:
-- Sales Representative, Sales Executive, Lab Technician Job Roles are at Higher likelihood of Attrition by Job role.
-#### Cost Analysis:
- -  As per the Analysis, Sales Representative and Lab Technician are the Job roles that undergone Highest Average Training Times Last Year have the Highest Attrition Rate which indicates that company has incured loss on both Recruitment cost and Training cost.
+3.Topic and Product Analysis:
+Under the Product Setup topic, 374 out of 630 tickets were resolved within SLA, but significant SLA violations were noted: 311 for first response and 783 for resolution.
+The Ready to Use Software category saw the highest number of tickets (1010), with 610 resolved within SLA.
 
-### Succession Planning Opportunities:
+4.Source Analysis:
+Email was the predominant source of tickets (1234), with 780 resolved within SLA and 844 raised after hours.
 
-1. Identifying High-Potential Employees
-2. Developing Leadership Training Programs
-3. Creating Talent Pipelines
-4. Cross-Training and Skill Development
-5. Knowledge Transfer Programs
-6. Succession Planning for Critical Departments
-7. Creating Mentorship Programs
-8. Encouraging Career Development Discussions
-9. Internal Promotions and Advancements
-10. Strategic Recruitment for Critical Roles
-11. Employee Engagement Initiatives
+5.Customer Satisfaction (CSAT) Analysis:
+The overall CSAT score is 57%, with the highest monthly score of 62% recorded in December.
+Connor Danielovitch achieved the highest individual CSAT score of 69.01%.
+The Purchasing and Invoicing topic recorded the highest CSAT score of 65%.
+
+6.Agent Performance:
+Michele Whyatt had the fewest SLA violations for first response (18 out of 186 tickets).
+Heather Urry had the fewest SLA violations for resolution (42 tickets).
 
 ### Recommendations
-
- #### Competitive Compensation Strategies:
-Keep up with market rates to ensure employees receive competitive salaries and comprehensive compensation packages.
- #### Career Growth Opportunities:
-Foster an environment that provides clear pathways for career advancement and growth within the organization.
- #### Cultivating a Positive Workplace Culture:
-Actively work to improve workplace culture, creating an environment that promotes collaboration, inclusion, and employee satisfaction.
- #### Prioritizing Work-Life Balance:
-Recognize and prioritize the importance of work-life balance to enhance employee well-being and job satisfaction.
- #### Recognition and Rewards Programs:
-Implement effective programs to recognize and reward employees for their contributions and achievements.
- #### Strategic Recruitment Practices:
-Ensure that the recruitment process aligns with the specific job roles, bringing in individuals who are well-suited for the positions.
- #### Leadership and Management Transformation:
-Overhaul leadership and management styles to foster a more efficient, supportive, and empowering work environment.
- #### Flexible Work Arrangements for Overtime:
-Offer flexibility to employees who work overtime, allowing for adaptable work arrangements that accommodate their needs
+#### 1. Implement an improved after-hours support strategy.
+	Since the maximum number of tickets (1566) were raised during after-hours, consider increasing staffing or offering automated support solutions during these times to handle the high volume effectively.
+#### 2. Optimize First Response Time (FRT):
+	Conduct training sessions focused on improving first response times. Introduce performance incentives for agents who consistently meet or exceed FRT SLAs. 
+#### 3. Enhance Resolution Time:
+	Identify bottlenecks in the resolution process and implement process improvements. This could include better documentation, enhanced troubleshooting tools, and more efficient escalation procedures.
+#### 4. Focus on High-Volume Topics and Categories:
+	Develop detailed knowledge base articles and self-service resources for these high-volume areas. Provide specialized training for support agents on these topics to enhance their expertise and efficiency.
+#### 5. Monitor and Enhance CSAT Scores:
+	Regularly review customer feedback to identify areas for improvement. Implement follow-up procedures for negative feedback to resolve customer issues and improve satisfaction. Recognize and reward agents with high CSAT scores to encourage positive performance.
+#### 6. Enhance Email Support Efficiency:
+	Streamline the email ticketing process with templates and automated responses for common queries. Ensure there is adequate after-hours email support to handle the volume effectively.
+#### 7. Encourage Customer Feedback and Survey Participation:
+	The dataset includes many empty survey values, indicating that a significant number of customers did not participate in the survey. Actively encourage customers to provide their valuable feedback and participate in surveys regarding the agent service.
 
 ### Challenges faced
-Navigating data challenges, including quality issues and limited historical data, integrating diverse data sources, Communicating complex findings effectively and adapting to unexpected external factors. Balancing technology/tool challenges, obtaining comprehensive employee feedback, and aligning analysis with organizational goals pose additional complexities.
+The dataset contains numerous empty survey responses, indicating a significant number of customers did not participate in the survey. This lack of participation poses a challenge in accurately analyzing agent performance, as the incomplete data may not fully reflect customer satisfaction levels and feedback.
 
 ### Conclusion:
-In conclusion, this HR Attrition Analysis project has provided valuable insights into the organization's workforce dynamics. By analyzing trends, identifying key factors contributing to attrition, and offering actionable recommendations, this analysis contributes to informed decision-making. We acknowledge the lessons learned during this project and look forward to applying these insights in future HR analytics initiatives.
+In conclusion, this technical support analysis project has provided valuable insights into key performance metrics and trends within the support team. By leveraging comprehensive data analysis, we have identified areas of strength and opportunities for improvement, which can significantly enhance the efficiency and effectiveness of the technical support operations.By implementing these recommendations, the technical support team can enhance their performance, resulting in a potential increase in CSAT scores and overall customer satisfaction. This project has laid a solid foundation for ongoing analysis and improvement in technical support operations.
 
+#### Created & Presented by -Aarthi Duraisingam @ Aspiring Data Analyst
+      Date- 22/05/2024
