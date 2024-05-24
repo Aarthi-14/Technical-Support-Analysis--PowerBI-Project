@@ -28,10 +28,29 @@ This Interactive Dashboard answers the All the following Challenge Questions:
 ### Analysis:
 Visualizations play a crucial role in translating raw data into actionable insights. In this section, we will explore the key visualizations used to analyze Technical Support trends.The Dashboard consists of 3 sections.
 
-### Ticket Summary
+### Ticket Volume 
 This section gives a summary of the Ticket volumes, the daily, monthly & weekly ticket Volume & the Peak Ticket Creation hour trend.
 
   ![Section1](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/86144f09-adae-4e28-af8d-1fd6e9a11355)
+
+### Ticket Summary
+This visualization presents a comprehensive view of Overall Ticket Summary. 
+- Key metrics include Total Tickets, Resolved Tickets, In Progress Tickets, Peak Ticket Creation Time,Work Hour Tickets, After Hour Tickets, Average FRT, Average RT.
+  
+  ![Ticket1](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/49d36686-d5b7-45b4-b5fe-3cdd5ced0d52)
+
+  * Out of ﻿2330﻿ total tickets,﻿1355﻿ tickets are Resolved based on " Within SLA" of both SLA for First Response & SLA for Resolution. 
+  * In Progress tickets are in total of ﻿400﻿.
+  * The Overall Peak Ticket Creation Hour is at ﻿15﻿ Hours in which Maximum number of tickets has been raised during that Hour.
+  * Maximum Tickets were raised during After Hours of ﻿1566﻿ in total & ﻿764﻿ Tickets in total was raised during Work Hours.
+  * The  Average First Resolution Time(Hours) is ﻿0.43﻿ & the Average Resolution Time (Hours) is ﻿33.24﻿.
+    
+#### Daily Ticket Volume
+
+![Daily tc](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/73603ae9-ff2b-4e4c-9869-dbb50178d5ad)
+![weekly tc](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/4c439b98-8c31-4562-9b8e-929d8e16c073)
+![Monthly tc](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/946ceac7-1c24-4f6a-9436-f66b907dc666)
+
 
 ### Ticket Trends
 This section gives a detailed view of the Ticket trends over Topic, Source, Product & Geography & SLA Pattern for First Response & Resolution.
@@ -43,14 +62,6 @@ This section gives a detailed view of the CSAT Trend for Topic, Agent & Agent SL
 
   ![Section3](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/10175e32-fbbd-43c1-a3c0-567578cab53f)
 
-
-
-### Ticket Summary
-This visualization presents a comprehensive view of Overall Ticket Summary. 
-- Key metrics include Total Tickets, Resolved Tickets, In Progress Tickets, Peak Ticket Creation Time,Work Hour Tickets, After Hour Tickets, Average FRT, Average RT.
-- Users can Interact with Visualization by using slicers for Months.
-  
-  ![Ticket summary](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/0f4cf38c-7fc4-42a9-8191-1ab519f5a35a)
 
 
 ### Key Insights
