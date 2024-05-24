@@ -164,9 +164,10 @@ Visualizations play a crucial role in translating raw data into actionable insig
 ### Ticket Summary
 This visualization presents a comprehensive view of Overall Ticket Summary. 
 - Key metrics include Total Tickets, Resolved Tickets, In Progress Tickets, Peak Ticket Creation Time,Work Hour Tickets, After Hour Tickets, Average FRT, Average RT.
-- Users can Interact with Visualization by using slicers for Gender/Department/Job Role.
+- Users can Interact with Visualization by using slicers for Month.
 
-![overallkpi](https://github.com/Aarthi-14/HR_Attrition_Analysis-PowerBI/assets/147639053/39fada9b-2ccd-4198-839a-fc6d9df6684f)   
+  ![Section1](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/86144f09-adae-4e28-af8d-1fd6e9a11355)
+
  
 
  1. Total No. Of Employees, Attrition Count and Attrition Rate.
