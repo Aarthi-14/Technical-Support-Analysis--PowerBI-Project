@@ -104,7 +104,15 @@ This section gives a detailed view of the CSAT Trend for Topic, Agent & Agent SL
   ![Section3](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/10175e32-fbbd-43c1-a3c0-567578cab53f)
 
 #### CSAT Trend
+  ![csat score](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/65d8bb9f-6e9c-4c0e-b87c-bbabe79b7cf5)
 
+ * The Overall CSAT Score marked 57% from 2nd January 2023 to 31st December 2023.
+ * CSAT trend records the Highest of ﻿62 %﻿ in the Month of December.
+ * The CSAT Score of Purchasing and Invoicing records to ﻿65 %﻿ which is the Highest in Topic Category.
+
+  ![bEST AGENT](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/9468d044-160c-4b55-b3fa-2f91cee579fe)
+
+ * Connor Danielovitch ranked Overall Highest CSAT Score of ﻿69.01%﻿ & he got 100% CSAT Score in Training Request & he tracked more than 60% of CSAT Score in each topic.
 
 
 ### Key Insights
