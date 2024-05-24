@@ -102,8 +102,8 @@ This section gives a detailed view of the Ticket trends over Topic, Source, Prod
   
 ### CSAT & Agent SLA Trends
 This section gives a detailed view of the CSAT Trend for Topic, Agent & Agent SLA for First Response & Resolution.
+  ![csat 123](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/717e9966-b601-47c6-b72c-16593980ee44)
 
-  ![Section3](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/10175e32-fbbd-43c1-a3c0-567578cab53f)
 
 #### CSAT Trend
   ![csat score](https://github.com/Aarthi-14/Technical-Support-Analysis/assets/147639053/65d8bb9f-6e9c-4c0e-b87c-bbabe79b7cf5)
