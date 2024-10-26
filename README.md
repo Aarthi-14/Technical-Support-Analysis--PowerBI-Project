@@ -1,4 +1,7 @@
 # Technical Support Analysis - PowerBI Project 
+
+[Dahboard Link](https://app.powerbi.com/view?r=eyJrIjoiMDkwNGEyYjctYjM5Ni00MjY5LWE1YjYtOGQ3OTgwMzE2MmM2IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
+
  
 ## Created by Aarthi Duraisingam [Linkedin Profile](https://www.linkedin.com/in/aarthi-duraisingam-2438b7248/)
   Technical support, also known as tech support, is a call centre type customer service provided by companies to advise and assist registered users with issues concerning their technical products. 
